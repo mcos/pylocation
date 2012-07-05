@@ -1,6 +1,0 @@
-*.pyc
-MANIFEST
-dist/
-env/
-build/
-.gitignore
