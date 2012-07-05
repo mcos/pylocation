@@ -33,9 +33,11 @@ Download the tarball, untar and run `python setup.py install`
     pyloc.json # Returns the information as JSON parsed to a dictionary
     pyloc.xmltext # Returns the information as an xml string
     pyloc.xml # Returns the information as an XML Element Tree
+
     """
     The following returns the information as a python object
     """
+
     pylocinfo = pyloc.info
     print pylocinfo.ip     # '8.8.8.8'
     print pylocinfo.city    # 'Mountain View, CA'
@@ -43,7 +45,6 @@ Download the tarball, untar and run `python setup.py install`
     print pylocinfo.country_code    # 'US'
     print pylocinfo.latitude    # 37.402
     print pylocinfo.longitude   # -122.078
-
 
     """
     If you're getting the info for multiple IP addresses, you don't need to
