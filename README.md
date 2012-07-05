@@ -37,12 +37,12 @@ Download the tarball, untar and run `python setup.py install`
     The following returns the information as a python object
     """
     pylocinfo = pyloc.info
-    pylocinfo.ip => '8.8.8.8'
-    pylocinfo.city => 'Mountain View, CA'
-    pylocinfo.country_name => 'UNITED STATES'
-    pylocinfo.country_code => 'US'
-    pylocinfo.latitude => '37.402'
-    pylocinfo.longitude => '-122.078'
+    print pylocinfo.ip     # '8.8.8.8'
+    print pylocinfo.city    # 'Mountain View, CA'
+    print pylocinfo.country_name    # 'UNITED STATES'
+    print pylocinfo.country_code    # 'US'
+    print pylocinfo.latitude    # 37.402
+    print pylocinfo.longitude   # -122.078
 
 
     """

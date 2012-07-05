@@ -53,8 +53,14 @@ class LocationInfo(object):
         self.city = properties['city']
         self.country_name = properties['country_name']
         self.country_code = properties['country_code']
-        self.latitude = properties.get('lat', None)
-        self.longitude = properties.get('lng', None)
+        self.latitude = None
+        self.longitude = None
+        latitude = properties.get('lat', None)
+        if latitude:
+            self.latitude = float(latitude)
+        longitude = properties.get('lng', None)
+        if latitude:
+            self.longitude = float(longitude)
 
 class PyLocation(object):
     """The :class `PyLocation` object. Used to perform the various operations
