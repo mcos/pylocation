@@ -5,7 +5,7 @@ A Python Module to wrap the IP address geolocation service from [hostip.info](ht
 
 
 ## Installation
-Download the tarball, untar and run `python setup.py install`
+Install from PyPI using `pip install pylocation`
 
 ## Dependencies
 `pylocation` depends on the excellent [requests](https://github.com/kennethreitz/requests) library.
