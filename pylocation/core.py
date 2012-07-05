@@ -49,20 +49,12 @@ class LocationInfo(object):
     """
 
     def __init__(self, properties):
-        for prop in properties:
-            prop_name = prop
-            if prop_name == 'lat':
-                prop_name = 'latitude'
-            elif prop_name == 'lng':
-                prop_name = 'longitude'
-            setattr(self, prop_name, properties[prop])
-    def __init__(self, properties):
         self.ip = properties['ip']
         self.city = properties['city']
         self.country_name = properties['country_name']
         self.country_code = properties['country_code']
-        self.latitude = properties.get('lat',None)
-        self.longitude = properties.get('lng',None)
+        self.latitude = properties.get('lat', None)
+        self.longitude = properties.get('lng', None)
 
 class PyLocation(object):
     """The :class `PyLocation` object. Used to perform the various operations
