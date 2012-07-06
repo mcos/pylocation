@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(name = 'pylocation',
-      version = '0.1',
+      version = '0.2',
       description = 'Python Wrapper Library for Geolocating IP Addresses',
       author = 'Mark Costello',
       author_email = 'me@markcostello.net',
